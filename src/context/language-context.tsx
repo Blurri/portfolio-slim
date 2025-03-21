@@ -67,14 +67,24 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
           de: { ...translations.de, ...deTranslations },
         });
 
+        // First check localStorage
         const savedLanguage = localStorage.getItem(
           "language"
         ) as Language | null;
+
         if (
           savedLanguage &&
           (savedLanguage === "en" || savedLanguage === "de")
         ) {
           setLanguage(savedLanguage);
+        } else {
+          // If no saved preference, check browser language
+          const browserLang = navigator.language.toLowerCase();
+          // Set to German if browser language starts with 'de', otherwise default to English
+          const defaultLang: Language = browserLang.startsWith("de")
+            ? "de"
+            : "en";
+          setLanguage(defaultLang);
         }
 
         setIsLoaded(true);
