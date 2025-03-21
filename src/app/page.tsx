@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ArrowRight, Briefcase, Code, Github, Mail, User } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { useLanguage } from "@/context/language-context"
-import { useProjects } from "@/data/projects-data"
+import { useState } from "react";
+import { ArrowRight, User } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useLanguage } from "@/context/language-context";
+import { useProjects } from "@/data/projects-data";
 
 export default function Portfolio() {
-  const [activeTab, setActiveTab] = useState("all")
-  const { t } = useLanguage()
-  const projects = useProjects()
+  const [activeTab, setActiveTab] = useState("all");
+  const { t } = useLanguage();
+  const projects = useProjects();
 
   return (
     <div className="max-w-6xl mx-auto">
@@ -24,8 +24,12 @@ export default function Portfolio() {
               >
                 {t("hero.title")}
               </h1>
-              <h2 className="text-xl md:text-2xl text-purple-600 dark:text-purple-400 mb-4">{t("hero.subtitle")}</h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">{t("hero.description")}</p>
+              <h2 className="text-xl md:text-2xl text-purple-600 dark:text-purple-400 mb-4">
+                {t("hero.subtitle")}
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                {t("hero.description")}
+              </p>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#contact"
@@ -59,18 +63,30 @@ export default function Portfolio() {
           {t("about.title")}
         </h2>
         <div className="neu-flat dark:dark-neu-flat rounded-2xl p-6 md:p-8">
-          <p className="text-gray-600 dark:text-gray-300 mb-4">{t("about.p1")}</p>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">{t("about.p2")}</p>
-          <p className="text-gray-600 dark:text-gray-300 mb-8">{t("about.p3")}</p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            {t("about.p1")}
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            {t("about.p2")}
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">
+            {t("about.p3")}
+          </p>
 
           {/* AI Enthusiasm Section */}
           <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8">
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">
               {t("about.ai.title")}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{t("about.ai.p1")}</p>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">{t("about.ai.p2")}</p>
-            <p className="text-gray-600 dark:text-gray-300">{t("about.ai.p3")}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              {t("about.ai.p1")}
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              {t("about.ai.p2")}
+            </p>
+            <p className="text-gray-600 dark:text-gray-300">
+              {t("about.ai.p3")}
+            </p>
           </div>
         </div>
       </section>
@@ -127,7 +143,7 @@ export default function Portfolio() {
                 "px-6 py-3 rounded-xl flex items-center gap-2 transition-all",
                 activeTab === tab.id
                   ? "neu-pressed dark:dark-neu-pressed text-purple-600 dark:text-purple-400"
-                  : "neu-button dark:dark-neu-button text-gray-700 dark:text-gray-300",
+                  : "neu-button dark:dark-neu-button text-gray-700 dark:text-gray-300"
               )}
             >
               {tab.label}
@@ -137,18 +153,29 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects
-            .filter((project) => activeTab === "all" || project.type === activeTab)
+            .filter(
+              (project) => activeTab === "all" || project.type === activeTab
+            )
             .map((project, index) => (
-              <div key={index} className="neu-flat dark:dark-neu-flat rounded-2xl overflow-hidden">
+              <div
+                key={index}
+                className="neu-flat dark:dark-neu-flat rounded-2xl overflow-hidden"
+              >
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">{project.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    {project.description}
+                  </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => {
-                      const techObj = technologies.find((t) => t.name === tech) || {
+                      const techObj = technologies.find(
+                        (t) => t.name === tech
+                      ) || {
                         color1: "#8b5cf6",
                         color2: "#6366f1",
-                      }
+                      };
 
                       return (
                         <span
@@ -164,7 +191,7 @@ export default function Portfolio() {
                         >
                           {tech}
                         </span>
-                      )
+                      );
                     })}
                   </div>
                   <div className="text-gray-600 dark:text-gray-300">
@@ -200,33 +227,40 @@ export default function Portfolio() {
                 period: "2014 - 2016",
                 role: "Software Engineer",
                 company: "PM Medici",
-                description: "Developed web applications and maintained existing systems.",
+                description:
+                  "Developed web applications and maintained existing systems.",
               },
               {
                 period: "2013 - 2014",
                 role: "Software Engineer",
                 company: "DWA AG",
-                description: "Worked on frontend development and client-side applications.",
+                description:
+                  "Worked on frontend development and client-side applications.",
               },
               {
                 period: "2012 - 2013",
                 role: "Intern",
                 company: "Rucotec",
-                description: "Assisted in software development and learned industry practices.",
+                description:
+                  "Assisted in software development and learned industry practices.",
               },
             ].map((job, index) => (
               <div key={index} className="relative pl-10 pb-8">
                 <div className="absolute left-2 top-1 w-5 h-5 rounded-full neu-circle dark:dark-neu-circle flex items-center justify-center">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                 </div>
-                <div className="mb-1 text-sm text-purple-600 dark:text-purple-400 font-medium">{job.period}</div>
+                <div className="mb-1 text-sm text-purple-600 dark:text-purple-400 font-medium">
+                  {job.period}
+                </div>
                 <h3
                   data-section-title={job.role}
                   className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1"
                 >
                   {job.role} at {job.company}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">{job.description}</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {job.description}
+                </p>
               </div>
             ))}
           </div>
@@ -234,7 +268,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="mb-16">
+      {/*  <section id="contact" className="mb-16">
         <h2
           data-section-title={t("contact.title")}
           className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6"
@@ -358,14 +392,19 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="text-center text-gray-600 dark:text-gray-400 pb-8">
-        <p>{t("footer.copyright").replace("{year}", new Date().getFullYear().toString())}</p>
+        <p>
+          {t("footer.copyright").replace(
+            "{year}",
+            new Date().getFullYear().toString()
+          )}
+        </p>
       </footer>
     </div>
-  )
+  );
 }
 
 // Technology data with color gradients
@@ -385,5 +424,4 @@ const technologies = [
   { name: "AI Agents", color1: "#8b5cf6", color2: "#6366f1" },
   { name: "LLMs", color1: "#3b82f6", color2: "#2563eb" },
   { name: "RAG", color1: "#ec4899", color2: "#db2777" },
-]
-
+];

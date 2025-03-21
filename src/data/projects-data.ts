@@ -61,22 +61,6 @@ export function useProjects(): Project[] {
     },
     {
       en: {
-        title: "AI-Powered Virtual Assistant",
-        description:
-          "Built a super cool AI assistant that helps teams cut through the daily grind by automating boring tasks, answering questions about company docs, and generating reports on the fly.",
-        role: "AI Developer",
-      },
-      de: {
-        title: "KI-gestützter virtueller Assistent",
-        description:
-          "Habe einen richtig coolen KI-Assistenten entwickelt, der Teams hilft, den Alltag zu meistern, indem er langweilige Aufgaben automatisiert und Fragen zu Unternehmensdokumenten beantwortet.",
-        role: "KI-Entwickler",
-      },
-      technologies: ["React", "Node.js", "OpenAI", "LangChain", "Vector DB"],
-      type: "web",
-    },
-    {
-      en: {
         title: "Sustainability Platform",
         description:
           "Created a full-stack platform connecting consumers with sustainable products and services. Implemented advanced filtering, user reviews, and vendor management.",
