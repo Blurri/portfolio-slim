@@ -1,0 +1,47 @@
+{
+  "site.title": "Software-Entwickler Portfolio",
+  "nav.about": "Über mich",
+  "nav.technologies": "Technologien",
+  "nav.projects": "Projekte",
+  "nav.experience": "Erfahrung",
+  "nav.contact": "Kontakt",
+
+  "hero.title": "Gabor Raz",
+  "hero.subtitle": "Software-Entwickler",
+  "hero.description": "Entwicklung moderner Web- und Mobilanwendungen mit Fokus auf Benutzererfahrung",
+  "hero.contact": "Kontakt aufnehmen",
+  "hero.projects": "Projekte ansehen",
+
+  "about.title": "Über mich",
+  "about.p1": "Ich bin ein leidenschaftlicher und erfahrener Software-Entwickler aus der Schweiz, spezialisiert auf moderne Web- und Mobilentwicklung. Mein Hauptfokus liegt auf der Entwicklung skalierbarer und benutzerfreundlicher Anwendungen mit modernsten Frontend- und Backend-Technologien.",
+  "about.p2": "Mit einem Auge fürs Detail und Benutzerfreundlichkeit mache ich Ideen zu robusten digitalen Produkten. Ich lege Wert auf sauberen Code, effektive Planung, Teamzusammenarbeit und automatisierte Entwicklungs-Workflows (CI/CD).",
+  "about.p3": "Im Laufe der Jahre habe ich zu verschiedenen Projekten aus verschiedenen Branchen beigetragen, von Krankenversicherungsplattformen und Finanztools bis hin zu Nachhaltigkeits-Apps und Software für öffentliches Engagement.",
+  "about.ai.title": "Meine KI-Reise",
+  "about.ai.p1": "Ich bin total begeistert von all der KI-Technologie, die gerade explodiert! Es ist eine so aufregende Zeit in der Tech-Welt - wir erleben buchstäblich eine Revolution, und ich bin voll dabei!",
+  "about.ai.p2": "Ich liebe es, mit KI-Tools zu spielen, um meine Produktivität zu steigern, aber was mich wirklich antreibt, ist das Entwickeln eigener Agenten und das Verstehen, wie diese Systeme funktionieren. Statt Kunden mit einer weiteren PowerPoint-Präsentation oder Figma-Mockup zu langweilen, habe ich KI genutzt, um echte funktionierende Prototypen für Pitches zu erstellen - und das ist ein echter Game-Changer!",
+  "about.ai.p3": "Das Beste daran? Ich schaue nicht nur von der Seitenlinie zu - ich bin mittendrin, experimentiere und baue. Es ist unglaublich energiegeladen, Teil dieser Welle zu sein, anstatt nur später darüber zu lesen. Ich bastle ständig an neuen KI-Tools und Ansätzen herum und kann es kaum erwarten zu sehen, wohin das alles als Nächstes führt!",
+
+  "technologies.title": "Schlüsseltechnologien",
+
+  "projects.title": "Ausgewählte Projekte",
+  "projects.all": "Alle Projekte",
+  "projects.web": "Web-Apps",
+  "projects.mobile": "Mobile Apps",
+  "projects.role": "Rolle",
+
+  "experience.title": "Berufserfahrung",
+
+  "contact.title": "Kontakt",
+  "contact.getInTouch": "Kontakt aufnehmen",
+  "contact.name": "Name",
+  "contact.email": "E-Mail",
+  "contact.message": "Nachricht",
+  "contact.send": "Nachricht senden",
+  "contact.connectWithMe": "Verbinde dich mit mir",
+
+  "footer.copyright": "© {year} • Gabor Raz • Software-Entwickler • Schweiz",
+
+  "language.en": "Englisch",
+  "language.de": "Deutsch"
+}
+

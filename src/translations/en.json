@@ -1,0 +1,47 @@
+{
+  "site.title": "Software Engineer Portfolio",
+  "nav.about": "About",
+  "nav.technologies": "Technologies",
+  "nav.projects": "Projects",
+  "nav.experience": "Experience",
+  "nav.contact": "Contact",
+
+  "hero.title": "Gabor Raz",
+  "hero.subtitle": "Software Engineer",
+  "hero.description": "Building modern web and mobile applications with a focus on user experience",
+  "hero.contact": "Contact Me",
+  "hero.projects": "View Projects",
+
+  "about.title": "About Me",
+  "about.p1": "I am a passionate and experienced Software Engineer from Switzerland, specializing in modern web and mobile development. My main focus lies in building scalable and user-friendly applications using cutting-edge frontend and backend technologies.",
+  "about.p2": "With a strong eye for detail and usability, I enjoy transforming ideas into robust digital products. I take pride not only in clean code but also in effective planning, team collaboration, and automated development workflows (CI/CD).",
+  "about.p3": "Over the years, I have contributed to diverse projects across industries, from health insurance platforms and financial tools to sustainability apps and public engagement software.",
+  "about.ai.title": "My AI Journey",
+  "about.ai.p1": "I'm absolutely stoked about all the AI tech that's exploding right now! It's such an exciting time to be in tech - we're literally watching a revolution unfold, and I'm here for it!",
+  "about.ai.p2": "I love playing with AI tools to supercharge my productivity, but what really gets me going is building my own agents and figuring out how these systems tick. Instead of boring clients with yet another PowerPoint deck or Figma mockup, I've been using AI to whip up actual working prototypes for pitches - and let me tell you, it's a game-changer!",
+  "about.ai.p3": "The best part? I'm not just watching from the sidelines - I'm right in the middle of it all, experimenting and building. There's something incredibly energizing about being part of this wave rather than just reading about it later. I'm constantly tinkering with new AI tools and approaches, and I can't wait to see where this all goes next!",
+
+  "technologies.title": "Key Technologies",
+
+  "projects.title": "Selected Projects",
+  "projects.all": "All Projects",
+  "projects.web": "Web Apps",
+  "projects.mobile": "Mobile Apps",
+  "projects.role": "Role",
+
+  "experience.title": "Professional Experience",
+
+  "contact.title": "Contact",
+  "contact.getInTouch": "Get In Touch",
+  "contact.name": "Name",
+  "contact.email": "Email",
+  "contact.message": "Message",
+  "contact.send": "Send Message",
+  "contact.connectWithMe": "Connect With Me",
+
+  "footer.copyright": "© {year} • Gabor Raz • Software Engineer • Switzerland",
+
+  "language.en": "English",
+  "language.de": "German"
+}
+
